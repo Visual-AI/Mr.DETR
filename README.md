@@ -5,7 +5,7 @@
 <sup>2</sup> <sub>Meituan Inc.</sub>  
 
 [![Conference](https://img.shields.io/badge/CVPR-2025-blue)]()
-[![Paper](https://img.shields.io/badge/arXiv-2203.05402-brightgreen)](https://arxiv.org/abs/2412.10028)
+[![Paper](https://img.shields.io/badge/arXiv-2412.10028-brightgreen)](https://arxiv.org/abs/2412.10028)
 [![Project](https://img.shields.io/badge/Project-red)](https://visual-ai.github.io/mrdetr/)
 <a href="mailto: zhangchbin@gmail.com">
         <img alt="emal" src="https://img.shields.io/badge/contact_me-email-yellow">
