@@ -15,7 +15,7 @@
 
 
 ## Updates
-- [03/25] We release the code and weights of Mr. DETR for object detection.
+- [03/25] We release the code and weights of Mr. DETR for object detection. You may find pre-trained weights at [Huggingface](https://huggingface.co/allencbzhang/Mr.DETR/tree/main).
 - [03/25] Mr. DETR is accepted by CVPR 2025.
 
 ## Performance
