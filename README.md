@@ -12,17 +12,16 @@
     </a>
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mr-detr-instructive-multi-route-training-for/object-detection-on-coco-2017-val)](https://paperswithcode.com/sota/object-detection-on-coco-2017-val?p=mr-detr-instructive-multi-route-training-for)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mr-detr-instructive-multi-route-training-for/object-detection-on-coco-2017-val)](https://paperswithcode.com/sota/object-detection-on-coco-2017-val?p=mr-detr-instructive-multi-route-training-for)
+
 
 ## Updates
 - [03/25] We release the code and weights of Mr. DETR for object detection.
 - [03/25] Mr. DETR is accepted by CVPR 2025.
 
 ## Performance
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114256229960103&bvid=BV1ThZnYxE5G&cid=29164111365&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+[Demo Video for Street](https://www.bilibili.com/video/BV1ThZnYxE5G/?spm_id_from=333.1387.homepage.video_card.click&vd_source=3b32a049a039d0ef814f8588b3c9b2d9)  
+[Demo Video for Dense and Crowded Scene](https://www.zhihu.com/zvideo/1890060966391153546)
 
-Also, you may check another demo video for **Dense and Crowded Scene** at
-https://www.zhihu.com/zvideo/1890060966391153546
 
 ## Method
 <img width="1230" alt="" src="assets/mrdetrmethod.png">
