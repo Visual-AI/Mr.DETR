@@ -15,6 +15,7 @@
 
 
 ## Updates
+- [04/25] Mr. DETR supports Instance segmentation now. We release the code and pre-trained weights.
 - [03/25] We release the code and weights of Mr. DETR for object detection. You may find pre-trained weights at [Huggingface](https://huggingface.co/allencbzhang/Mr.DETR/tree/main).
 - [03/25] Mr. DETR is accepted by CVPR 2025.
 
@@ -28,18 +29,25 @@
 
 
 ## Model Zoo
-| Model | Backbone | Query | Epochs | AP | AP<sub>50</sub> | AP<sub>75</sub> | AP<sub>s</sub> | AP<sub>m</sub> | AP<sub>l</sub> |  |
+| Model |   | Backbone | Query | Epochs | AP | AP<sub>50</sub> | AP<sub>75</sub> | AP<sub>s</sub> | AP<sub>m</sub> | AP<sub>l</sub> |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Mr. DETR-Deformable | R50 | 300 | 12 | 49.5 | 67.0 | 53.7 | 32.1 | 52.5 | 64.7 | [Config](projects/mr_detr_deformable/configs/deformable_detr_r50_two_stage_12ep_plusplus_300q.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformable_r50_12ep_300q.pth) |
-| Mr. DETR-Deformable | R50 | 900 | 12 | 50.7 | 68.2 | 55.4 | 33.6 | 54.3 | 64.6 | [Config](projects/mr_detr_deformable/configs/deformable_detr_r50_two_stage_12ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformbale_r50_12ep_900q.pth) |
-| Mr. DETR-Deformable | R50 | 900 | 24 | 51.4 | 69.0 | 56.2 | 34.9 | 54.8 | 66.0 | [Config](projects/mr_detr_deformable/configs/deformable_detr_r50_two_stage_24ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformable_r50_24ep_900q.pth) |
-| Mr. DETR-DINO | R50 | 900 | 12 | 50.9 | 68.4 | 55.6 | 34.6 | 53.8 | 65.2 | [Config](projects/mr_detr_dino/configs/deformable_detr_r50_two_stage_12ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_dino_r50_12ep_900q.pth) |
-| Mr. DETR-Align | R50 | 900 | 12 | 51.4 | 68.6 | 55.7 | 33.8 | 54.7 | 66.3 | [Config](projects/mr_detr_align/configs/deformable_detr_r50_two_stage_12ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_align_r50_12ep_900q.pth) |
-| Mr. DETR-Align | R50 | 900 | 24 | 52.3 | 69.5 | 56.7 | 35.2 | 56.0 | 67.0 | [Config](projects/mr_detr_align/configs/deformable_detr_r50_two_stage_24ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_align_r50_24ep_900q.pth) |
-| Mr. DETR-Align | Swin-L | 900 | 12 | 58.4 | 76.3 | 63.9 | 40.8 | 62.8 | 75.3 | [Config](projects/mr_detr_align/configs/deformable_detr_swinl_two_stage_12ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_align_swinL_12ep_900q.pth) |
-| Mr. DETR-Align<sup>*</sup> | Swin-L | 900 | 12 | 61.8 | 79.0 | 67.6 | 47.7 | 65.6 | 75.7 | [Config](projects/mr_detr_align/configs/deformable_detr_swinl_two_stage_12ep_plusplus_5scale_fintuning.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_align_swinl_12ep_900q_objects365_processed.pth) |
+| Mr. DETR-Deformable |  [Config](projects/mr_detr_deformable/configs/deformable_detr_r50_two_stage_12ep_plusplus_300q.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformable_r50_12ep_300q.pth) | R50 | 300 | 12 | 49.5 | 67.0 | 53.7 | 32.1 | 52.5 | 64.7 |
+| Mr. DETR-Deformable | [Config](projects/mr_detr_deformable/configs/deformable_detr_r50_two_stage_12ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformbale_r50_12ep_900q.pth) | R50 | 900 | 12 | 50.7 | 68.2 | 55.4 | 33.6 | 54.3 | 64.6 | 
+| Mr. DETR-Deformable | [Config](projects/mr_detr_deformable/configs/deformable_detr_r50_two_stage_24ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformable_r50_24ep_900q.pth) | R50 | 900 | 24 | 51.4 | 69.0 | 56.2 | 34.9 | 54.8 | 66.0 |
+| Mr. DETR-DINO | [Config](projects/mr_detr_dino/configs/deformable_detr_r50_two_stage_12ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_dino_r50_12ep_900q.pth) | R50 | 900 | 12 | 50.9 | 68.4 | 55.6 | 34.6 | 53.8 | 65.2 |
+| Mr. DETR-Align | [Config](projects/mr_detr_align/configs/deformable_detr_r50_two_stage_12ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_align_r50_12ep_900q.pth) | R50 | 900 | 12 | 51.4 | 68.6 | 55.7 | 33.8 | 54.7 | 66.3 |
+| Mr. DETR-Align |  [Config](projects/mr_detr_align/configs/deformable_detr_r50_two_stage_24ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_align_r50_24ep_900q.pth) | R50 | 900 | 24 | 52.3 | 69.5 | 56.7 | 35.2 | 56.0 | 67.0 |
+| Mr. DETR-Align |  [Config](projects/mr_detr_align/configs/deformable_detr_swinl_two_stage_12ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_align_swinL_12ep_900q.pth) | Swin-L | 900 | 12 | 58.4 | 76.3 | 63.9 | 40.8 | 62.8 | 75.3 |
+| Mr. DETR-Align<sup>*</sup> | [Config](projects/mr_detr_align/configs/deformable_detr_swinl_two_stage_12ep_plusplus_5scale_fintuning.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_align_swinl_12ep_900q_objects365_processed.pth) | Swin-L | 900 | 12 | 61.8 | 79.0 | 67.6 | 47.7 | 65.6 | 75.7 | 
 
 ***: The model is fine-tuned on the Objects365 Pretrained Model with 5-scale. Due to the limited GPU resources, we only pre-trained the Swin-L based Mr. DETR for 549K iterations (batchsize of 16).**
+
+***
+
+| Model |   | Backbone | Query | Epochs | AP<sup>box</sup> | AP<sup>mask</sup> |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+Mr. DETR-Deformable-InstanceSeg | [Config](projects/mr_detr_deformable_ins_seg/configs/deformable_detr_r50_two_stage_12ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformable_r50_12ep_300q_insseg.pth) | R50 | 300 | 12 | 49.5 | 36.0 |
+Mr. DETR-Deformable-InstanceSeg | [Config](projects/mr_detr_deformable_ins_seg/configs/deformable_detr_r50_two_stage_24ep_plusplus.py) & [Weights](https://huggingface.co/allencbzhang/Mr.DETR/resolve/main/MrDETR_deformable_r50_24ep_300q_insseg.pth) | R50 | 300 | 24 | 50.3 | 37.6 |
 
 
 
