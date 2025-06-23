@@ -156,6 +156,7 @@ python projects/mr_detr_align/train_net_swin.py \
     train.output_dir=<output_dir> \
     train.amp.enabled=True \ # mixed precision training
     model.transformer.encoder.use_checkpoint=True \ # gradient checkpointing, save gpu memory but lower speed
+    model.backbone.use_checkpoint=True \ # gradient checkpointing for swin-L
 
 # to get mean model, which is more stable than ema, and improves about 0.1~0.2%.
 python projects/modelmean_12ep.py --folder <output_dir>
