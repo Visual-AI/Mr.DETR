@@ -1,4 +1,4 @@
-# Mr. DETR
+# Mr. DETR / Mr. DETR++
 **<center><font size=4>[CVPR 2025] Mr. DETR: Instructive Multi-Route Training for Detection Transformers</font></center>**  
 [Chang-Bin Zhang](https://zhangchbin.github.io)<sup>1</sup>, Yujie Zhong<sup>2</sup>, Kai Han<sup>1</sup>  
 <sup>1</sup> <sub>The University of Hong Kong</sub>  
