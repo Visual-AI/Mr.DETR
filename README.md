@@ -15,6 +15,7 @@
 
 
 ## Updates
+- [07/25] We release [Mr. DETR++](https://arxiv.org/pdf/2412.10028v4), a stronger MoE model, supporting Object Detection, Instance Segmentation, and Panoptic Segmentation.
 - [04/25] We release 🤗[Online Demo](https://huggingface.co/spaces/allencbzhang/Mr.DETR) of Mr. DETR.
 - [04/25] Mr. DETR supports Instance segmentation now. We release the code and pre-trained weights.
 - [03/25] We release the code and weights of Mr. DETR for object detection. You may find pre-trained weights at [Huggingface](https://huggingface.co/allencbzhang/Mr.DETR/tree/main).
